@@ -47,7 +47,7 @@ El siguiente diagrama muestra el comportamiento del algoritmo en sus primeros 4 
 ![alt_text](images/image1.png "image_tooltip")
 
 
-**_Figura 01. Diagrama de ejemplo que muestra el comportamiento de la estrategia propuesta en sus primeros 4 niveles._**
+_Figura 01. Diagrama de ejemplo que muestra el comportamiento de la estrategia propuesta en sus primeros 4 niveles._
 
 
 ## Pseudocódigo del Algoritmo de Resolución del Problema
@@ -65,7 +65,7 @@ fin Algoritmo
 ```
 
 
-** _Figura 02. Pseudocódigo del algoritmo “esPotenciaDeTres”._**
+_Figura 02. Pseudocódigo del algoritmo “esPotenciaDeTres”._
 
 El siguiente algoritmo, obtenerCombinaciones, representa la aplicación de la técnica de Backtracking: se encarga de mostrar las soluciones parciales, y cuenta con un llamado recursivo que permite la evaluación de todas las posibilidades viables. 
 
@@ -142,7 +142,7 @@ fin Algoritmo
 ```
 
 
-** _Figura 03. Pseudocódigo del algoritmo “obtenerCombinaciones”._**
+ _Figura 03. Pseudocódigo del algoritmo “obtenerCombinaciones”._
 
 El último algoritmo, buscarPotenciaDeTres, es el primero que se ejecuta, y se encarga de inicializar las variables necesarias y realizar el primer llamado al algoritmo de backtracking. 
 
@@ -186,7 +186,7 @@ Fin Algoritmo
 ```
 
 
-** _Figura 04. Pseudocódigo del algoritmo “buscarPotenciaDeTres”._**
+_Figura 04. Pseudocódigo del algoritmo “buscarPotenciaDeTres”._
 
 
 ## Análisis de Complejidad Temporal
@@ -208,7 +208,7 @@ Por otra parte, la variable “a” de la fórmula, que representa la cantidad d
 
 ![alt_text](images/image3.png "image_tooltip")
 
-** _Figura 05. Definición del valor de “a” en “obtenerCombinaciones”._**
+_Figura 05. Definición del valor de “a” en “obtenerCombinaciones”._
 
 En el peor de todos los casos, la entrada cuenta con igual cantidad de números pares e impares, por lo que se evaluará la totalidad del conjunto de entrada en cada iteración del algoritmo. En dicho caso, “a” toma el valor “n”, igual a la entrada (suma de la cantidad de cifras pares e impares). Este resultado también se obtiene aplicando la fórmula definida para “m” en entradas con igual cantidad de pares e impares, por lo que se utilizará esta variable en todos los casos.
 
@@ -218,7 +218,7 @@ De esta manera, con "a = m", "b = 1", "k = 0", es posible aplicar la fórmula de
 
 ![alt_text](images/image4.png)
  \
-** _Figura 06. Cálculo de complejidad del algoritmo “obtenerCombinaciones”._**
+_Figura 06. Cálculo de complejidad del algoritmo “obtenerCombinaciones”._
 
 Finalmente, el algoritmo _buscarPotenciasDeTres,_ encargado de inicializar variables y realizar el primer llamado al backtracking, tiene una complejidad temporal de "O(n)", siendo “n” la suma de las cifras pares e impares de entrada. Esto se debe a que el algoritmo, para la inicialización de las variables que se utilizan en el backtracking, realiza recorridos iterativos sobre los arreglos de cifras. 
 
@@ -226,7 +226,7 @@ De esta manera, la complejidad temporal teórica del algoritmo se encuentra dada
 
 ![alt text](images/image5.png)
 \
-** _Figura 07. Cálculo de complejidad temporal general._**
+_Figura 07. Cálculo de complejidad temporal general._
 
 
 ### Análisis de Complejidad Temporal Práctica
@@ -314,7 +314,7 @@ Con esto en mente, se definieron 8 conjuntos de prueba, y se evaluó la ejecuci�
 </table>
 
 
-** _Figura 08. Conjuntos de prueba._**
+_Figura 08. Conjuntos de prueba._
 
 Los resultados reales obtenidos de las pruebas son los siguientes:
 
@@ -413,7 +413,7 @@ Los resultados reales obtenidos de las pruebas son los siguientes:
 </table>
 
 
-** _Figura 09. Resultados obtenidos, comparación entre algoritmos con y sin poda._**
+_Figura 09. Resultados obtenidos, comparación entre algoritmos con y sin poda._
 
 El siguiente gráfico muestra una comparación entre los resultados obtenidos para ambos conjuntos de pruebas. En este, se ordenaron los datos por variación entre tiempos, en orden creciente. Para poder representar el caso de prueba 8, para el que no se pudo obtener un tiempo de ejecución sin poda debido a limitaciones en capacidad de cómputo, se introdujo el valor arbitrario “999.999 ms”. 
 
@@ -421,7 +421,7 @@ El siguiente gráfico muestra una comparación entre los resultados obtenidos pa
 
 ![alt text](images/image6.png)
 \
-** _Figura 10. Resultados obtenidos, comparación entre algoritmos con y sin poda._**
+_Figura 10. Resultados obtenidos, comparación entre algoritmos con y sin poda._
 
 A partir del análisis de los resultados obtenidos y la comparación entre los distintos conjuntos de pruebas,  se llegó a las siguientes conclusiones:
 
@@ -434,7 +434,7 @@ A partir del análisis de los resultados obtenidos y la comparación entre los d
 
 ![alt text](images/image8.png)
 
-** _Figura 11. Capturas de pantalla de la salida por terminal de las pruebas realizadas._**
+_Figura 11. Capturas de pantalla de la salida por terminal de las pruebas realizadas._
 
 De esta manera, se ha logrado demostrar heurísticamente que al utilizar una estrategia tan compleja en cuanto a lo temporal como lo es el ‘backtracking’, es esencial buscar la máxima posibilidad de poda.
 
@@ -455,6 +455,6 @@ Un pequeño detalle a aclarar es que, a la hora de implementar la solución, par
 
 ![alt text](images/image9.png)
 
-** _Figura 12. Lógica para evitar que el número comience con 0.._**
+_Figura 12. Lógica para evitar que el número comience con 0._
 
 Este fragmento de código evita que en el primer nivel se analice el 0 como primer dígito, saltándolo y evitando incrementar su contador como si hubiera sido utilizado.
